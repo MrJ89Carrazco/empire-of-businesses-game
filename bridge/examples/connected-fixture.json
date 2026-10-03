@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "mode": "connected",
+  "generated_at": "2025-01-01T00:00:00Z",
+  "read_only": true,
+  "sources": [
+    {
+      "id": "local-registry",
+      "status": "ok",
+      "checked_at": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "local-runtime",
+      "status": "ok",
+      "checked_at": "2025-01-01T00:00:00Z"
+    }
+  ],
+  "backends": {
+    "local_registry": {
+      "state": "reachable",
+      "checked_at": "2025-01-01T00:00:00Z",
+      "error": null,
+      "http_status": 200,
+      "projects_state": "reachable",
+      "health_state": "reachable",
+      "source_generated_at": "2025-01-01T00:00:00Z"
+    },
+    "local-runtime": {
+      "state": "reachable",
+      "checked_at": "2025-01-01T00:00:00Z",
+      "error": null,
+      "http_status": 200
+    }
+  },
+  "projects": [
+    {
+      "id": "client-services",
+      "name": "Client Websites / Web Agency",
+      "stage": "delivery",
+      "status": "source-present",
+      "source_exists": true,
+      "order": 8,
+      "depends_on": [
+        "local-runtime",
+        "status-viewer"
+      ],
+      "prerequisites": [
+        "local-runtime",
+        "status-viewer"
+      ],
+      "evidence": "Registry: source-present; stage: delivery. Source files: present.",
+      "service_state": "not-probed"
+    }
+  ],
+  "metrics": {
+    "project_count": 1,
+    "blueprint_count": 1,
+    "reachable_service_count": 1,
+    "revenue": null
+  },
+  "warnings": [
+    "Reachability and source-file presence do not verify deployment, business readiness, or revenue.",
+    "Local runtime payload fields are not mapped; only JSON endpoint reachability is verified."
+  ]
+}

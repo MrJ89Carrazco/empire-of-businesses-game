@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "mode": "offline",
+  "generated_at": "2025-01-01T00:00:00Z",
+  "read_only": true,
+  "sources": [
+    {
+      "id": "local-registry",
+      "status": "offline",
+      "checked_at": null
+    },
+    {
+      "id": "local-runtime",
+      "status": "offline",
+      "checked_at": null
+    }
+  ],
+  "backends": {
+    "local_registry": {
+      "state": "offline",
+      "checked_at": null,
+      "error": null,
+      "http_status": null,
+      "projects_state": "offline",
+      "health_state": "offline",
+      "source_generated_at": null
+    },
+    "local-runtime": {
+      "state": "offline",
+      "checked_at": null,
+      "error": null,
+      "http_status": null
+    }
+  },
+  "projects": [],
+  "metrics": {
+    "project_count": null,
+    "blueprint_count": null,
+    "reachable_service_count": null,
+    "revenue": null
+  },
+  "warnings": [
+    "Local service reads are disabled. Restart with --connect-local to enable them."
+  ]
+}

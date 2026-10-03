@@ -1,0 +1,20 @@
+{
+  "name": "empire-business-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A fictional nine-business campaign with browser-local saves and an optional generic read-only local bridge",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:bridge",
+    "test:unit": "node scripts/run-node-tests.cjs",
+    "test:bridge": "python3 scripts/run-python-tests.py",
+    "start": "python3 -m bridge.server --port 8787",
+    "check": "node scripts/check.cjs",
+    "build:pages": "node scripts/build-pages.cjs",
+    "preview:pages": "python3 -m http.server 8788 --bind 127.0.0.1 --directory dist",
+    "verify": "npm run check && npm test && npm run build:pages",
+    "build": "npm run build:pages"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

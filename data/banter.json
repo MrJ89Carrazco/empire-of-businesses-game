@@ -1,0 +1,239 @@
+{
+  "_note": "Fictional, scripted dialogue for the keyless public demo. Edit freely, then re-run `node demo-build/tools/build.mjs` to regenerate data/banter.js. `pairs` drives the relationship icons (heart / spark / clash / sweat) shown when that pair converses.",
+  "station": "Olympus Station",
+  "cast": [
+    { "id": "zeus",       "name": "Zeus",       "title": "CEO",                          "skin": "zeus",       "color": "#ffd45a", "home": [12, 5] },
+    { "id": "hera",       "name": "Hera",       "title": "COO",                          "skin": "hera",       "color": "#d9a0ff", "home": [5, 8] },
+    { "id": "athena",     "name": "Athena",     "title": "Head of Strategy",             "skin": "athena",     "color": "#8fc4ff", "home": [9, 9] },
+    { "id": "hermes",     "name": "Hermes",     "title": "Sales & Delivery",             "skin": "hermes",     "color": "#7df08a", "home": [19, 10] },
+    { "id": "hephaestus", "name": "Hephaestus", "title": "Chief Engineer",               "skin": "hephaestus", "color": "#ff8a5a", "home": [7, 4] },
+    { "id": "apollo",     "name": "Apollo",     "title": "Head of Marketing",            "skin": "apollo",     "color": "#ffb02e", "home": [17, 6] },
+    { "id": "hades",      "name": "Hades",      "title": "Infra (Basement)",             "skin": "hades",      "color": "#a08aff", "home": [21, 4] },
+    { "id": "dionysus",   "name": "Dionysus",   "title": "Chief Vibes Officer",          "skin": "dionysus",   "color": "#ff6fae", "home": [15, 12] },
+    { "id": "poseidon",   "name": "Poseidon",   "title": "Head of Fluid Ops",            "skin": "poseidon",   "color": "#3fe0d0", "home": [10, 4] },
+    { "id": "ares",       "name": "Ares",       "title": "Head of Security",             "skin": "ares",       "color": "#ff5a4a", "home": [24, 9] },
+    { "id": "artemis",    "name": "Artemis",    "title": "Night Shift Lead",             "skin": "artemis",    "color": "#c8f0d8", "home": [3, 4] },
+    { "id": "aphrodite",  "name": "Aphrodite",  "title": "People Ops",                   "skin": "aphrodite",  "color": "#ff9ac8", "home": [6, 11] },
+    { "id": "demeter",    "name": "Demeter",    "title": "Life Support & Hydroponics",   "skin": "demeter",    "color": "#d8e070", "home": [14, 4] }
+  ],
+  "pairs": [
+    { "a": "zeus",       "b": "hera",      "kind": "clash", "label": "married, bickering" },
+    { "a": "ares",       "b": "aphrodite", "kind": "heart", "label": "office romance (HR is aware; HR is her)" },
+    { "a": "athena",     "b": "poseidon",  "kind": "clash", "label": "the Athens grudge" },
+    { "a": "apollo",     "b": "artemis",   "kind": "spark", "label": "twins, day shift vs night shift" },
+    { "a": "hephaestus", "b": "aphrodite", "kind": "sweat", "label": "it's complicated" },
+    { "a": "hades",      "b": "demeter",   "kind": "clash", "label": "the in-law situation" },
+    { "a": "hermes",     "b": "apollo",    "kind": "spark", "label": "the lyre deal" },
+    { "a": "zeus",       "b": "poseidon",  "kind": "clash", "label": "sibling board seats" },
+    { "a": "dionysus",   "b": "demeter",   "kind": "heart", "label": "the grape supply chain" }
+  ],
+  "solo": [
+    { "who": "zeus",       "line": "I don't do stand-ups. I do thunder-ups." },
+    { "who": "zeus",       "line": "Our runway is fine. I can literally summon weather." },
+    { "who": "zeus",       "line": "New OKR: smite fewer customers this quarter." },
+    { "who": "zeus",       "line": "Open door policy. The door is a lightning bolt." },
+    { "who": "hera",       "line": "I've scheduled a meeting about why we have so many meetings." },
+    { "who": "hera",       "line": "Zeus, you ARE the board. Stop calling emergency board meetings." },
+    { "who": "hera",       "line": "Org chart's updated. I'm the load-bearing wall." },
+    { "who": "athena",     "line": "I modeled 10,000 futures. In 9,998, Hermes forgets the invoice." },
+    { "who": "athena",     "line": "Strategy is just wisdom with a slide deck." },
+    { "who": "athena",     "line": "My owl reviewed the roadmap. He said 'hoo approved this'." },
+    { "who": "hermes",     "line": "Delivered! ...to the wrong moon, but delivered." },
+    { "who": "hermes",     "line": "My sandals have wings and I'm STILL late to standup." },
+    { "who": "hermes",     "line": "Closed a deal with a nebula. Payment terms: net eternity." },
+    { "who": "hephaestus", "line": "The reactor is fine. The smoke is decorative." },
+    { "who": "hephaestus", "line": "I forged a new feature. It's mostly anvil." },
+    { "who": "hephaestus", "line": "Who keeps filing bugs as 'divine intervention'?" },
+    { "who": "apollo",     "line": "Our brand voice is: sun, but make it B2B." },
+    { "who": "apollo",     "line": "Wrote a haiku for the landing page. Conversions up three lyres." },
+    { "who": "apollo",     "line": "Engagement is up. Mostly Dionysus liking his own posts." },
+    { "who": "hades",      "line": "Infra update: the basement is warm. Too warm. Don't ask." },
+    { "who": "hades",      "line": "Every server that dies comes to me eventually." },
+    { "who": "hades",      "line": "I'm not saying uptime is cursed. Read the SLA carefully." },
+    { "who": "dionysus",   "line": "Team-building tonight. Bring a goblet." },
+    { "who": "dionysus",   "line": "I'm not unproductive. I'm fermenting ideas." },
+    { "who": "dionysus",   "line": "Who approved the ambrosia budget? ...Oh. Me." },
+    { "who": "poseidon",   "line": "Fluid Ops status: everything is wet, as designed." },
+    { "who": "poseidon",   "line": "The coolant loop has feelings. I've met them." },
+    { "who": "poseidon",   "line": "I don't have a leak problem. The station has a me problem." },
+    { "who": "ares",       "line": "Security audit complete. I punched the firewall. It's fine now." },
+    { "who": "ares",       "line": "Threat level: someone microwaved fish on deck 2." },
+    { "who": "ares",       "line": "My password is 'WAR'. Nobody would ever guess something that obvious." },
+    { "who": "artemis",    "line": "Night shift report: three comets, zero emails. Perfect." },
+    { "who": "artemis",    "line": "I don't sleep. I just aim my eyes at the dark for a while." },
+    { "who": "artemis",    "line": "If you see me at a day-shift meeting, something has gone very wrong." },
+    { "who": "aphrodite",  "line": "Reminder: the 'feelings' channel is not for deploy logs." },
+    { "who": "aphrodite",  "line": "Employee satisfaction is up 40%. I made everyone mirrors." },
+    { "who": "aphrodite",  "line": "Onboarding packet now includes a love letter. Mandatory." },
+    { "who": "demeter",    "line": "Oxygen garden is thriving. Please stop naming the tomatoes." },
+    { "who": "demeter",    "line": "Life support is green. Literally. Everything is plants." },
+    { "who": "demeter",    "line": "If you eat the hydroponics, I WILL know." }
+  ],
+  "convos": [
+    [
+      { "who": "zeus", "line": "Hera, what's our burn rate?" },
+      { "who": "hera", "line": "Mostly you. You keep setting things on fire." },
+      { "who": "zeus", "line": "That's called a launch." }
+    ],
+    [
+      { "who": "hera", "line": "You promoted a swan to VP again." },
+      { "who": "zeus", "line": "He interviewed very well." },
+      { "who": "hera", "line": "He bit the recruiter." },
+      { "who": "zeus", "line": "Leadership material." }
+    ],
+    [
+      { "who": "zeus", "line": "I've decided to restructure the company." },
+      { "who": "hera", "line": "You mean you renamed yourself 'Chief Thunder Officer'." },
+      { "who": "zeus", "line": "It's on the business cards now, so it's real." }
+    ],
+    [
+      { "who": "hermes", "line": "Client wants it faster, cheaper AND better." },
+      { "who": "athena", "line": "Pick two." },
+      { "who": "hermes", "line": "They picked 'free' and 'yesterday'." },
+      { "who": "athena", "line": "I'll draft a strategy. And a sedative." }
+    ],
+    [
+      { "who": "hephaestus", "line": "Server room's overheating again." },
+      { "who": "hades",      "line": "That's not the servers. That's the underworld." },
+      { "who": "hephaestus", "line": "Can we bill the underworld for cooling?" },
+      { "who": "hades",      "line": "They pay in souls. Accounting hates that." }
+    ],
+    [
+      { "who": "apollo",   "line": "We need a viral campaign." },
+      { "who": "dionysus", "line": "What if... the station throws a party?" },
+      { "who": "apollo",   "line": "That's not a campaign." },
+      { "who": "dionysus", "line": "It is if you livestream it." }
+    ],
+    [
+      { "who": "zeus",   "line": "Hermes! Did the pitch deck go out?" },
+      { "who": "hermes", "line": "To every investor in the galaxy." },
+      { "who": "zeus",   "line": "Even the ones we owe money?" },
+      { "who": "hermes", "line": "...Especially those, apparently." }
+    ],
+    [
+      { "who": "hephaestus", "line": "Lightning Bolt v2 is ready." },
+      { "who": "zeus",       "line": "What's new?" },
+      { "who": "hephaestus", "line": "It has an undo button." },
+      { "who": "zeus",       "line": "Ship it. Remove the undo button." }
+    ],
+    [
+      { "who": "dionysus", "line": "What if our main KPI was vibes?" },
+      { "who": "athena",   "line": "Vibes are not measurable." },
+      { "who": "dionysus", "line": "Not with that attitude." }
+    ],
+    [
+      { "who": "hera",     "line": "Expense report: 'one (1) eternal feast'?" },
+      { "who": "dionysus", "line": "Client entertainment." },
+      { "who": "hera",     "line": "The client was you." },
+      { "who": "dionysus", "line": "I'm a very demanding client." }
+    ],
+    [
+      { "who": "ares",      "line": "I drafted a new security policy." },
+      { "who": "aphrodite", "line": "Is it just the word 'NO' in a heart-shaped frame?" },
+      { "who": "ares",      "line": "...You framed it for me?" },
+      { "who": "aphrodite", "line": "I frame everything you make, darling." }
+    ],
+    [
+      { "who": "aphrodite", "line": "Ares, you can't call a fire drill a 'battle'." },
+      { "who": "ares",      "line": "Everyone ran. Everyone survived. Victory." },
+      { "who": "aphrodite", "line": "...Okay, that's kind of hot." }
+    ],
+    [
+      { "who": "ares",      "line": "Someone tripped the perimeter alarm." },
+      { "who": "aphrodite", "line": "It was me. I wanted you to come find me." },
+      { "who": "ares",      "line": "I'm writing you up. In calligraphy." }
+    ],
+    [
+      { "who": "poseidon", "line": "I'm renaming the water cooler 'Poseidon's Gift'." },
+      { "who": "athena",   "line": "I already named it. It's 'The Olive Bar'." },
+      { "who": "poseidon", "line": "It's a WATER cooler, Athena." },
+      { "who": "athena",   "line": "And yet the team voted for olives. Again." }
+    ],
+    [
+      { "who": "athena",   "line": "Your fluid ops roadmap is just a puddle." },
+      { "who": "poseidon", "line": "It's a STRATEGIC puddle." },
+      { "who": "athena",   "line": "It's leaking into my strategy." }
+    ],
+    [
+      { "who": "poseidon", "line": "Rematch. Best gift to the station wins naming rights." },
+      { "who": "athena",   "line": "You gave the station a saltwater spring in the server room." },
+      { "who": "poseidon", "line": "...Which is ALSO a gift." }
+    ],
+    [
+      { "who": "apollo",  "line": "Sis! Day shift crushed it. Sun's up, morale's up." },
+      { "who": "artemis", "line": "The sun is a lamp you bolted to the hull, Apollo." },
+      { "who": "apollo",  "line": "A BRANDED lamp." }
+    ],
+    [
+      { "who": "artemis", "line": "Can you dim the sunrise? I'm trying to sleep." },
+      { "who": "apollo",  "line": "Dim? Me? Do you even know my brand?" },
+      { "who": "artemis", "line": "I know where you keep your arrows. I mean megaphones." }
+    ],
+    [
+      { "who": "hephaestus", "line": "Aphrodite, I, uh, built you a thing." },
+      { "who": "aphrodite",  "line": "Is it another golden throne that traps people?" },
+      { "who": "hephaestus", "line": "It's a coffee machine. It only traps a little." }
+    ],
+    [
+      { "who": "aphrodite",  "line": "Your performance review is glowing, Heph." },
+      { "who": "hephaestus", "line": "That's the forge. My review is on fire." },
+      { "who": "aphrodite",  "line": "...I'll reschedule." }
+    ],
+    [
+      { "who": "demeter", "line": "Hades. Why is there a pomegranate on my desk?" },
+      { "who": "hades",   "line": "Peace offering. Six seeds. Totally normal amount." },
+      { "who": "demeter", "line": "I know EXACTLY what six seeds means." }
+    ],
+    [
+      { "who": "hades",   "line": "Your plants are growing into my server racks." },
+      { "who": "demeter", "line": "Your server racks are growing into my plants." },
+      { "who": "hades",   "line": "...We should talk to a mediator." },
+      { "who": "demeter", "line": "We are NOT asking Aphrodite again." }
+    ],
+    [
+      { "who": "hermes", "line": "Apollo, I'll trade you this lyre for your marketing budget." },
+      { "who": "apollo", "line": "You made that lyre out of MY tortoise." },
+      { "who": "hermes", "line": "Supply chain is supply chain." }
+    ],
+    [
+      { "who": "apollo", "line": "Hermes, tagline for the delivery app?" },
+      { "who": "hermes", "line": "'Fast as a god. Accurate as a god on Friday.'" },
+      { "who": "apollo", "line": "Honest. Bold. I hate it. Ship it." }
+    ],
+    [
+      { "who": "zeus",     "line": "Poseidon. Why is the conference room an aquarium?" },
+      { "who": "poseidon", "line": "You said 'make a splash' at the offsite." },
+      { "who": "zeus",     "line": "It was a METAPHOR." },
+      { "who": "poseidon", "line": "Metaphors don't have tides, brother." }
+    ],
+    [
+      { "who": "dionysus", "line": "Demeter, I need forty acres of grapes by Friday." },
+      { "who": "demeter",  "line": "This is a space station." },
+      { "who": "dionysus", "line": "So, vertical grapes?" },
+      { "who": "demeter",  "line": "...I'll allow vertical grapes." }
+    ],
+    [
+      { "who": "artemis", "line": "Night patrol found a raccoon in the vents." },
+      { "who": "ares",    "line": "INTRUDER. I'll get my spear." },
+      { "who": "artemis", "line": "I adopted him. His name is Hoplite." }
+    ],
+    [
+      { "who": "ares",   "line": "I want a bigger security budget." },
+      { "who": "athena", "line": "You want a bigger catapult." },
+      { "who": "ares",   "line": "Security is a state of mind. The catapult is a state of art." }
+    ],
+    [
+      { "who": "hermes",  "line": "Package for 'whoever's awake'. Signed, the void." },
+      { "who": "artemis", "line": "That's always me. It's always for me." }
+    ],
+    [
+      { "who": "demeter",    "line": "Heph, the air scrubbers smell like toast." },
+      { "who": "hephaestus", "line": "That's a feature. Breakfast-scented oxygen." }
+    ],
+    [
+      { "who": "hera",      "line": "Aphrodite, the team survey just says 'more snacks'." },
+      { "who": "aphrodite", "line": "That's the most honest data we've ever had." },
+      { "who": "hera",      "line": "Approve it. Expense it to Dionysus." }
+    ]
+  ]
+}

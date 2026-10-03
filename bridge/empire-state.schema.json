@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Empire of Gods bounded read-only state, core contract v1",
+  "type": "object",
+  "required": ["schema_version", "mode", "generated_at", "read_only", "sources", "projects", "metrics"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "mode": {"enum": ["offline", "connected"]},
+    "generated_at": {"type": "string", "format": "date-time", "maxLength": 40},
+    "read_only": {"const": true},
+    "sources": {
+      "type": "array", "maxItems": 8,
+      "items": {
+        "type": "object", "required": ["id", "status"],
+        "properties": {
+          "id": {"enum": ["local-registry", "local-runtime"]},
+          "status": {"enum": ["offline", "ok", "unavailable", "invalid"]},
+          "checked_at": {"type": ["string", "null"], "maxLength": 40}
+        }
+      }
+    },
+    "projects": {
+      "type": "array", "maxItems": 64,
+      "items": {
+        "type": "object", "required": ["id", "name", "evidence", "prerequisites"],
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "name": {"type": "string", "minLength": 1, "maxLength": 160},
+          "evidence": {"type": "string", "maxLength": 180},
+          "prerequisites": {"type": "array", "maxItems": 16, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+          "stage": {"type": ["string", "null"], "maxLength": 48},
+          "status": {"type": ["string", "null"], "maxLength": 64},
+          "source_exists": {"type": ["boolean", "null"]},
+          "order": {"type": ["integer", "null"], "minimum": 0, "maximum": 1000000},
+          "service_state": {"enum": ["reachable", "unreachable", "not-probed", "invalid", null]}
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "required": ["project_count", "blueprint_count", "reachable_service_count", "revenue"],
+      "properties": {
+        "project_count": {"type": ["integer", "null"], "minimum": 0},
+        "blueprint_count": {"type": ["integer", "null"], "minimum": 0},
+        "reachable_service_count": {"type": ["integer", "null"], "minimum": 0, "maximum": 64},
+        "revenue": {"type": "null"}
+      }
+    },
+    "warnings": {"type": "array", "maxItems": 8, "items": {"type": "string", "maxLength": 180}},
+    "backends": {"type": "object"}
+  },
+  "$defs": {"id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$"}}
+}

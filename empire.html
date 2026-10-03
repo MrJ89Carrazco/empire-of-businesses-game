@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-deployment="local">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empire of Gods · Business Command</title>
+<meta name="description" content="A fictional nine-business, eighteen-mission practice campaign for Empire of Gods.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="assets/furniture/core.png" type="image/png">
+<link rel="stylesheet" href="game/empire.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar">
+  <a class="brand" href="empire.html" aria-label="Empire of Gods home"><span class="brand-symbol">E<span>◈</span>G</span><span>EMPIRE OF GODS<small>BUSINESS COMMAND / v1.0</small></span></a>
+  <nav aria-label="Views"><button class="nav-tab active" id="practice-tab" type="button" aria-pressed="true">01 · Play campaign</button><button class="nav-tab" id="operations-tab" type="button" aria-pressed="false">02 · Operations</button></nav>
+  <a class="station-link" href="index.html">Visit Olympus Station ↗</a>
+</header>
+<main>
+  <div class="eyebrow"><span class="live-dot"></span> PRACTICE BUSINESS NETWORK <span class="eyebrow-right">NINE ENGINES. ONE SHARED FOUNDATION.</span></div>
+  <section class="hero" aria-labelledby="page-title">
+    <div><p class="kicker" id="view-kicker">THE PRACTICE CAMPAIGN</p><h1 id="page-title">Build the businesses.<br><em>Play the connections.</em></h1><p class="hero-copy" id="view-copy">Turn a collection of ideas into a connected empire. Plan each engine, borrow capabilities from its neighbors, and complete a delivery loop.</p></div>
+    <div class="campaign-card" id="campaign-score"><div class="between"><span class="micro">CAMPAIGN PROGRESS</span><span id="rank">APPRENTICE</span></div><div class="progress-number"><span id="mission-count">0</span><span>/ 18 <small>missions</small></span></div><div class="progress-track"><div id="progress-bar"></div></div><div class="between progress-bottom"><span id="loop-count">0 / 9 delivery loops</span><span id="xp-count">0 XP</span></div></div>
+  </section>
+  <div class="mode-notice" id="hosting-notice" hidden><span class="notice-tag">STATIC PRACTICE</span><p>Fictional campaign and browser-local saves. Live business integrations require the downloaded local bridge.</p></div>
+  <div class="mode-notice" id="mode-notice"><span class="notice-tag">SIMULATION</span><p>Practice credits, XP, and completions are fictional. Real business status stays separate.</p><span id="save-status">Saved on this browser</span></div>
+  <div id="announcement" class="announcement" role="status" aria-live="polite" hidden></div>
+  <section id="practice-view">
+    <div class="campaign-tools"><div class="resources"><div><span>DAY</span><strong id="day-value">01</strong></div><div><span>FOCUS</span><strong id="focus-value">6 / 6</strong></div><div><span>PRACTICE CREDITS</span><strong id="credits-value">120</strong></div></div><div class="tool-actions"><button id="next-day" class="secondary" type="button">Next practice day →</button><button id="export-save" class="quiet" type="button">Export save</button><label class="quiet file-label" for="import-save">Import save<input type="file" id="import-save" accept=".json,application/json"></label><button id="reset-save" class="quiet" type="button">Reset</button></div></div>
+    <div class="workspace"><section class="network-panel" aria-labelledby="network-title"><div class="section-head"><div><span class="micro">THE BUSINESS NETWORK</span><h2 id="network-title">Choose your next move</h2></div><span class="small-muted">Select an engine to play</span></div><div id="business-grid" class="business-grid"></div><div class="map-key"><span><i class="key-dot gold"></i>Selected</span><span><i class="key-dot green"></i>Delivery loop complete</span><span>↳ Shared prerequisite</span></div></section><aside class="mission-panel" id="mission-panel" aria-labelledby="mission-business"></aside></div>
+    <section class="activity-panel"><div class="section-head"><div><span class="micro">CAMPAIGN LOG</span><h2>Small moves. Compounding progress.</h2></div><span id="activity-label" class="small-muted">All activity is simulated</span></div><ol id="activity-list" class="activity-list"></ol></section>
+  </section>
+  <section id="operations-view" hidden>
+    <div class="operations-toolbar"><div><h2>Shared state, with evidence</h2><p>Read-only service observations. A reachable service is not proof that a business is live.</p></div><button id="refresh-feed" class="primary" type="button">Refresh local state ↻</button></div>
+    <div class="feed-summary"><div><span class="micro">STATE FEED</span><strong id="feed-status">Not checked</strong></div><div><span class="micro">LAST SNAPSHOT</span><strong id="feed-time">—</strong></div><div><span class="micro">REAL REVENUE</span><strong>Not connected</strong></div><div><span class="micro">WORKFLOW EXECUTION</span><strong>Disabled</strong></div></div>
+    <p id="feed-explanation" class="help-copy">The optional local bridge demonstrates a generic read-only status contract. No live service is configured or verified.</p>
+    <div id="source-list" class="source-list"></div>
+    <div class="workspace ops-workspace"><section class="network-panel"><div class="section-head"><div><span class="micro">FICTIONAL BUSINESS CATEGORIES</span><h2>Readiness before execution</h2></div></div><div id="operation-businesses" class="operation-businesses"></div></section><aside class="ops-explainer"><span class="micro">THE SHARED FOUNDATION</span><h2>One state contract.<br>Clear boundaries.</h2><ol><li><strong>Local Registry</strong><span>Optional example inventory and health contract.</span></li><li><strong>Local Runtime</strong><span>Optional example reachability contract. No jobs execute.</span></li><li><strong>Business Command</strong><span>Play a fictional campaign; inspect real observations.</span></li><li><strong>Other local status tools</strong><span>Can use GET /api/empire-state. Example contract only.</span></li></ol><p>Real spending, publishing, outreach, sensitive data, and regulated decisions require separate review and authorization in their owning systems.</p></aside></div>
+  </section>
+</main>
+<footer><span>EMPIRE OF GODS <span class="muted">/ BUSINESS PRACTICE CAMPAIGN</span></span><span>Local-first · Read-only operations · No API keys</span><a href="docs/PLAY.md">Build notes ↗</a></footer>
+</div>
+<dialog id="reset-dialog"><h2>Reset this practice campaign?</h2><p>This clears fictional progress on this browser. Export your save first if you want to keep it.</p><div class="dialog-actions"><button id="cancel-reset" class="secondary" type="button">Keep playing</button><button id="confirm-reset" class="primary" type="button">Reset campaign</button></div></dialog>
+<script src="game/catalog.js"></script><script src="game/model.js"></script><script src="game/dashboard.js"></script>
+</body></html>
