@@ -7,3 +7,6 @@
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 /* Untrusted registry labels stay inside their bounded display cells. */
 .operation-row>div{min-width:0}.operation-row p,.help-copy,.announcement{overflow-wrap:anywhere}
+/* Return path to the Empire of Gods demo (council WO#6): always visible in the top bar. */
+.return-links{display:flex;flex-direction:column;align-items:flex-end;gap:6px;white-space:nowrap}.return-link{font:700 11px var(--mono);letter-spacing:.8px;color:#222515;background:var(--gold);border-radius:6px;padding:8px 11px}.return-link:hover{background:#f4d791}.return-itch{font-size:11px;color:var(--dim)}.return-itch:hover{color:var(--gold)}
+@media(max-width:780px){.return-links{order:2;flex-direction:row;align-items:center;gap:14px;width:100%;justify-content:space-between}}
